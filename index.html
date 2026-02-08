@@ -561,12 +561,25 @@
         <h1 class="hero-title">Your Opinion Matters to Brands Worldwide</h1>
         <p class="hero-subtitle">Join thousands of consumers who share their experiences and preferences to help companies create better products and services.</p>
         
-   <a href="https://onykp.com/link?z=10481650&var=worker1987_github_io_consumer-feedback"
-   class="hero-cta"
-   target="_self"
-   rel="noopener">
+  <a href="#" 
+   onclick="openHeroOffer()" 
+   class="hero-cta">
    <i class="fas fa-microphone-alt"></i> Sharing Your Views
 </a>
+
+<script>
+function openHeroOffer() {
+    // Tạo CLICK_ID random
+    const clickId = 'hero_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    // URL với CLICK_ID mới
+    const offerUrl = `https://onykp.com/link?z=10481650&var=worker1987_github_io_consumer-feedback&ymid=${encodeURIComponent(clickId)}`;
+    
+    // Chuyển trang trong cùng tab
+    window.location.href = offerUrl;
+    return false;
+}
+</script>
     </div>
 </section>
 
